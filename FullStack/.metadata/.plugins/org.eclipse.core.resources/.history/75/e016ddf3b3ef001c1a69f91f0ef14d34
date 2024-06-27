@@ -1,0 +1,27 @@
+package Examples;
+
+public class BreakWithLabels {
+
+	public static void main(String[] args) {
+
+		boolean t = true;
+		
+		first: {
+			System.out.println("This is first block");
+			
+		second: {
+			System.out.println("This is second block");
+			
+		third: {
+			
+			System.out.println("Third block before break");
+			if (t) {
+			break second;}
+			System.out.println("Third block after break");
+		}
+		}
+		}
+
+	}
+
+}

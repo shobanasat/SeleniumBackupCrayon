@@ -1,0 +1,8 @@
+package testingpackage;
+
+import package1.Class1;
+import package2.Class2;
+
+public class TestingMethod {
+
+}

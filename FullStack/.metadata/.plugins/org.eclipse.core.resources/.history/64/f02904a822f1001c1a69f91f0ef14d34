@@ -1,0 +1,23 @@
+package Examples;
+
+import java.util.Scanner;
+
+public class PatternJaggedArray {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the number of rows in the array: ");
+		Scanner sc1 = new Scanner(System.in);
+		int row = sc1.nextInt();
+		
+		int[][] arr = new int[row][];
+		
+		int count1=0;
+		for(int i=0;i<row;i++) {	
+			arr[i] = new int[count1];
+			count1++;
+		}
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package testingpackage;
+
+import package1.Class1;
+import package2.Class2;
+
+public class TestingMethod {
+
+	Class1 a = new Class1();
+	Class2 b = new Class2();
+		
+}

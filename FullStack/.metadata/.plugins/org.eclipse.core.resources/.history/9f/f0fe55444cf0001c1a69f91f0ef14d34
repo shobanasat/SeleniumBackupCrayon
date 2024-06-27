@@ -1,0 +1,29 @@
+package Examples;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+//Integer array
+		int[] arr = new int[5];
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		arr[3] = 40;
+		arr[4] = 50;
+		
+		for(int i=0;i<=arr.length-1;i++) {
+			System.out.println("The Element at index " + i + " is: " + arr[i]);
+		}
+		
+//String array
+		char[] arra = new char[3];
+		arra[0] = 'A';
+		arra[1] = 'B';
+		arra[2] = 'C';
+		
+		for (int i=0;i<arra.length;i++) {
+			System.out.println(arra[i]);
+		}
+	}
+
+}

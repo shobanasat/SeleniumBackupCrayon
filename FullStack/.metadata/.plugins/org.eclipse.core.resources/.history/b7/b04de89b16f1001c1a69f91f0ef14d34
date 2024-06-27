@@ -1,0 +1,37 @@
+package Examples;
+
+import java.util.Scanner;
+
+public class ArrayEvenOdd {
+
+	public static void main(String[] args) {
+		
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Enter number of rows in the array: ");
+		int row = sc1.nextInt();
+		
+		Scanner sc2 = new Scanner(System.in);
+		System.out.println("Enter number of columns in the array: ");
+		int col = sc2.nextInt();
+		
+
+		int arr[][] = {{1,2,3},{4,5,6}};
+		int even=0;
+		int odd=0;
+		
+		for(int i=0;i<arr.length;i++) {
+			for (int j=0;j<arr.length+1;j++) {
+				
+				if(arr[i][j] % 2 == 0) {
+					even++;
+				}
+				else {
+					odd++;
+				}
+			}
+		}
+		System.out.println("Count of even numbers in array: " + even);
+		System.out.println("Count of odd numbers in array: " + odd);
+	}
+
+}

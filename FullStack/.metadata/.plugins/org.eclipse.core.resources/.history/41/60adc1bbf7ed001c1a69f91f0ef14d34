@@ -1,0 +1,9 @@
+package package2;
+
+public class class2 {
+	
+	public void method2() {
+		System.out.println("This is package2.class2.method2");
+	}
+
+}

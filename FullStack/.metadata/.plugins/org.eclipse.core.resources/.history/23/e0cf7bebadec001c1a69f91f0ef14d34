@@ -1,0 +1,33 @@
+package Examples;
+
+public class Variables {
+	
+	//This is a instance variable of class Variables
+	public int b = 10;
+	
+/*	public Variables() {
+		this.b=20;
+	}*/
+
+	public static void main(String[] args) {
+
+		//Declaring local variable
+		int a = 123;
+		System.out.println(a);
+		
+		//Create object for constructor class and use the Instance variable
+		Variables i = new Variables();
+		System.out.println(i.b);
+		i.b = i.b + 10;
+		System.out.println(i.b);
+		instance();
+	}
+// local variable a cannot be used outside main block
+//	System.out.println(a); - this will fail
+	
+	public static void instance() {
+		
+		Variables j = new Variables();
+		System.out.println(j.b);
+	}
+}

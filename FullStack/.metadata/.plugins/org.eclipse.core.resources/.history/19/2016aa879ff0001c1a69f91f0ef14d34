@@ -1,0 +1,14 @@
+
+public class CloneArray {
+
+	public static void main(String[] args) {
+
+		int arr[] = {1,2,3};
+		
+		int cloneArray[] = arr.clone();
+		
+		System.out.println(cloneArray == arr);
+
+	}
+
+}

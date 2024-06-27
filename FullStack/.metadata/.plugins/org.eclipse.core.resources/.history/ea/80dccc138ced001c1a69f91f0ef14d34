@@ -1,0 +1,14 @@
+package Examples;
+
+public class IncreAndDecreOperator {
+
+	public static void main(String[] args) {
+
+		int numafter = 10;
+		int numbefore = 10;
+		
+		System.out.println(numafter++);
+		System.out.println(++numbefore);
+	}
+
+}

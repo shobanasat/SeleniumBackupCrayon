@@ -1,0 +1,62 @@
+package Examples;
+
+import java.util.Scanner;
+
+public class ArrayEvenOdd {
+
+	public static void main(String[] args) {
+		
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Enter number of rows in the array: ");
+		int row = sc1.nextInt();
+		
+		Scanner sc2 = new Scanner(System.in);
+		System.out.println("Enter number of columns in the array: ");
+		int col = sc2.nextInt();
+		
+		Scanner sc3 = new Scanner(System.in);
+		System.out.println("Enter values in each row of the array");
+		int[][] arr1 = new int[row][col];
+		
+		for(int i=0;i<=row-1;i++) {
+			for(int j=0;j<=col-1;j++) {
+				System.out.println("Enter value at location: [" + i + "][" + j + "]");
+				arr1[i][j] = sc3.nextInt();
+			}
+		}
+		
+		int even=0;
+		int odd=0;
+		int ilength=0;
+		int jlength=0;
+		
+		if(row == col) {
+			ilength = arr1.length;
+			jlength = arr1.length;
+		}
+		else if (row < col) {
+			ilength = row;
+			jlength = col - 1;
+		}
+		else {
+			ilength = row - 1;
+			jlength = col - 1;
+		}
+		
+		
+		for(int i=0;i<ilength;i++) {
+			for (int j=0;j<jlength;j++) {
+				
+				if(arr1[i][j] % 2 == 0) {
+					even++;
+				}
+				else {
+					odd++;
+				}
+			}
+		}
+		System.out.println("Count of even numbers in array: " + even);
+		System.out.println("Count of odd numbers in array: " + odd);
+	}
+
+}

@@ -1,0 +1,20 @@
+package Examples;
+
+public class Variables {
+	
+	public int add(int x, int y) {
+		
+		int sum = x + y;
+		System.out.println(sum);
+		return sum;
+		
+	}
+
+	public static void main(String[] args) {
+
+		Variables a = new Variables();
+		a.add(1,2);
+
+	}
+
+}
